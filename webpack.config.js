@@ -37,17 +37,19 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
+        // TinyMCE skin content styling
         test: /content\.inline\.css$/,
         type: 'asset/resource',
         generator: {
-          filename: '../css/[base]'
+          filename: '../css/skins/ui/oxide/[base]'
         },
       },
       {
+        // TinyMCE skin editor styling
         test: /skin\.css$/,
         type: 'asset/resource',
         generator: {
-          filename: '../css/[base]'
+          filename: '../css/skins/ui/oxide/[base]'
         },
       },
       {
